@@ -1,0 +1,144 @@
+/* .pavanam-regular {
+  font-family: 'Pavanam', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* .tiro-tamil-regular {
+  font-family: "Tiro Tamil", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    /* position: absolute; */
+    width: 100vw;
+    height: 50px;
+    max-height: 136px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo > img {
+    display: none;
+  }
+
+  .logo-text {
+    font-family: 'Tiro Tamil', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    padding-left: 0.5rem;
+    border: 2px solid red;
+  }
+
+  .nav-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 0.001rem;
+    margin-right: 2rem;
+    font-family: 'Pavanam', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    background-color: red;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    background-color: green;
+  }
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    /* position: absolute; */
+    width: 100vw;
+    height: 136px;
+    max-height: 136px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30rem;
+  }
+
+  .logo > img {
+    width: 4rem;
+    margin: auto 1rem;
+  }
+
+  .logo-text {
+    font-family: 'Tiro Tamil', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+  }
+
+  .nav-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 0.25rem;
+    margin-right: 2rem;
+    font-family: 'Pavanam', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */

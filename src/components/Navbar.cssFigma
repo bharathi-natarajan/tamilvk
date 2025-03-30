@@ -1,0 +1,171 @@
+Header
+
+position: absolute;
+width: 1254px;
+height: 136px;
+left: 1px;
+top: 2px;
+
+background: linear-gradient(90.6deg, #B5E1FF -8.11%, #B6E4FC 43.24%);
+
+
+/* Menubar */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 21px 25px;
+gap: 49px;
+
+position: absolute;
+width: 560.69px;
+height: 74px;
+left: 594px;
+top: calc(50% - 74px/2);
+
+background: rgba(255, 255, 255, 0.52);
+backdrop-filter: blur(3.1px);
+/* Note: backdrop-filter has minimal browser support */
+
+
+/* அமைப்பு */
+
+margin: 0 auto;
+width: 96px;
+height: 32px;
+
+font-family: 'Pavanam';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* நிருவாகம் */
+
+margin: 0 auto;
+width: 106px;
+height: 32px;
+
+font-family: 'Pavanam';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* நிகழ்வுகள் */
+
+margin: 0 auto;
+width: 111px;
+height: 32px;
+
+font-family: 'Pavanam';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* வெளியீடுகள் */
+
+margin: 0 auto;
+width: 132px;
+height: 32px;
+
+font-family: 'Pavanam';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Title */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 6px;
+
+position: absolute;
+width: 460px;
+height: 76px;
+left: 28px;
+top: 30px;
+
+
+
+/* logo */
+
+margin: 0 auto;
+width: 87.96px;
+height: 76px;
+
+background: url(logo.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* தமிழ் வளர்ச்சிக் கழகம் */
+
+margin: 0 auto;
+width: 344px;
+height: 40px;
+
+font-family: 'Tiro Tamil';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 40px;
+letter-spacing: -0.04em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
