@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <NavLink to="/">
+        <NavLink to="/" className="logo-link">
           <div className="logo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="TVK Logo" />
             <h2 className="logo-text">தமிழ் வளர்ச்சிக் கழகம்</h2>
           </div>
         </NavLink>
