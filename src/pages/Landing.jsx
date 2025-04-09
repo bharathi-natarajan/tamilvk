@@ -2,13 +2,13 @@ import { NavLink } from 'react-router-dom'
 import { heroText, historyText, teamText, teamMenuItems } from '../data'
 import Valluvar from '../images/Valluvar_ClearBg.png'
 import Founder from '../images/Avinashilingam.png'
+// import Chidambaram from '../images/Chidambaram.png'
 import '../pages/Landing.css'
 
 const Landing = () => {
   return (
     <>
       {/* Hero section */}
-
       <section className="hero-container">
         <div className="hero-text">
           <h1>{heroText.title}</h1>
@@ -21,9 +21,7 @@ const Landing = () => {
           <img src={Valluvar} alt="Valluvar Image" />
         </div>
       </section>
-
       {/* History section */}
-
       <section className="history">
         <div className="container">
           <div className="title">
@@ -58,6 +56,28 @@ const Landing = () => {
               return <li key={id}>{item}</li>
             })}
           </ul>
+        </div>
+
+        {/* Team card section */}
+
+        <div className="card-container">
+          {teamMenuItems.map((team) => {
+            return (
+              team.members &&
+              team.members.map((member, index) => (
+                <article className="card" key={`${team.id}-${index}`}>
+                  <div className="img-container">
+                    <img src={member.img} alt={member.name} />
+                  </div>
+                  <div className="card-title">
+                    <h4>{member.name}</h4>
+                    <p>{member.title1}</p>
+                    <p>{member.title2}</p>
+                  </div>
+                </article>
+              ))
+            )
+          })}
         </div>
       </section>
     </>

@@ -30,6 +30,39 @@ export const teamMenuItems = [
   {
     id: 1,
     item: 'அறங்காவல் குழு',
+    members: [
+      {
+        img: '/images/Chidambaram.png',
+        name: 'திரு.ப.சிதம்பரம்',
+        title1: 'முன்னாள் ஒன்றிய அமைச்சர்',
+        title2: '',
+      },
+      {
+        name: 'முனைவர் ம. இராசேந்திரன்',
+        title1: '',
+        title2: '',
+      },
+      {
+        name: 'திரு. கிருஷ்ண சந்த் சோடியா',
+        title1: '',
+        title2: '',
+      },
+      {
+        name: 'பேரா. முனைவர் வ. ஜெயதேவன்',
+        title1: '',
+        title2: '',
+      },
+      {
+        name: 'திரு. முஸ்தபா',
+        title1: '',
+        title2: '',
+      },
+      {
+        name: 'திரு. நல்லி குப்புசாமி',
+        title1: '',
+        title2: '',
+      },
+    ],
   },
   {
     id: 2,
