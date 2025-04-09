@@ -41,8 +41,11 @@
 }
 
 .logo h2 {
-  text-decoration: none;
   color: #fff;
+}
+
+.logo-link{
+  text-deoration: none;
 }
 
 .logo-text {
