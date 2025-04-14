@@ -332,7 +332,7 @@
 
   .title {
     width: 80%;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
   }
 
   .container h1 {
@@ -353,7 +353,7 @@
   }
 
   .founder img {
-    width: 8rem;
+    width: 6rem;
     object-fit: cover;
     border-radius: 0.75rem;
     margin: auto 1rem;
