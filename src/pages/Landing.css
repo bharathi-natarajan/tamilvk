@@ -127,10 +127,11 @@
   .hero-container {
     display: flex;
     width: 100vw;
-    height: 60vh;
-    flex-grow: 1;
-    justify-content: space-between;
+    height: auto;
     background-color: var(--clr-primary-1);
+    padding: 1rem;
+    gap: 0.5rem;
+    align-items: center;
   }
 
   .hero-text {
@@ -140,49 +141,43 @@
   }
 
   .hero-text h1 {
-    width: 100%;
-    padding-left: 1rem;
     font-family: 'Coiny';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 135%;
     letter-spacing: 0.01em;
     color: #fff;
+    padding: 0rem 1rem;
   }
 
   .hero-text p {
-    width: 100%;
-    padding-left: 1rem;
     font-family: 'Karla Tamil Upright';
-    font-style: normal;
-    font-weight: 400;
     font-size: 15px;
     line-height: 150%;
     color: #fff;
+    padding: 0rem 1rem;
   }
 
   .hero-image img {
-    height: 50%;
+    width: 100%;
+    max-height: 1000px;
+    object-fit: contain;
   }
 
   .landing-btn {
-    margin-left: 2rem;
+    /* margin: 1rem; */
     width: 6rem;
     height: 2rem;
     border-radius: 12px;
     border: none;
     background: linear-gradient(270deg, #650c99 0%, #c950ed 100%);
     font-family: 'Karla Tamil Upright';
-    font-style: normal;
-    font-weight: 400;
     font-size: 0.75rem;
     color: #fff;
     cursor: pointer;
   }
 }
 
-/* =================================================================================================== */
+/* ================================================================================= */
 
 /* history section */
 
@@ -253,189 +248,7 @@
   color: #fff;
 }
 
-/* =================================================================================================== */
-
-/* Team section */
-
-.team {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--clr-grey-5);
-
-  border: 2px solid red;
-}
-
-.team-title {
-  margin: 3rem;
-  text-align: center;
-}
-
-.team-title h1 {
-  font-family: 'Tiro Tamil';
-  font-size: 3rem;
-  color: #fff;
-}
-
-.team-title p {
-  margin: 2rem auto;
-  color: #fff;
-  font-size: 1.25rem;
-}
-
-.menu-bar {
-  display: flex;
-  width: 50%;
-  height: 3rem;
-  margin: 1rem auto;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: var(--grey-300);
-  border-radius: 5rem;
-  border-style: none;
-}
-
-.menu-bar ul li {
-  /* list-style: none; */
-  float: left;
-  margin: auto 0.75rem;
-  cursor: pointer;
-  font-family: 'Pavanam', sans-serif;
-  font-weight: 400;
-  font-size: 1.3rem;
-}
-
-/* Team card section */
-
-.card-container {
-  width: 80%;
-  height: 55%;
-  margin: auto;
-  padding: 0 1rem;
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--grey-100);
-  overflow: hidden;
-  border: 2px solid green;
-}
-
-.card {
-  margin-left: 2rem;
-  width: 14rem;
-  max-width: 14rem;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30rem;
-  flex-grow: 0;
-  flex-shrink: 0;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--white);
-  border-radius: 1rem;
-  border: 2px solid blue;
-}
-
-.img-container {
-  width: 60%;
-}
-
-.img-container img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 0.75rem;
-}
-
-.card-title h4 {
-  padding: 1rem;
-  font-family: 'Tiro Tamil';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-}
-
-.card-title p {
-  font-family: 'Karla Tamil Upright';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.05rem;
-  text-align: center;
-}
-
-/* ========================================================================== */
-
-/* history section */
-
-.history {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--clr-grey-3);
-}
-
-.container {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.title {
-  width: 80%;
-  margin-top: 5rem;
-}
-
-.container h1 {
-  font-family: 'Tiro Tamil';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 160%;
-  color: #fff;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  height: 50%;
-  margin-bottom: 5rem;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.founder img {
-  width: 15rem;
-  object-fit: cover;
-  border-radius: 1rem;
-  margin-right: 3rem;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  flex-basis: 60rem;
-  justify-content: center;
-  gap: 2rem;
-  align-items: first baseline;
-}
-
-.text p {
-  /* margin-top: 2rem; */
-  width: 80%;
-  font-family: 'Karla Tamil Upright';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 140%;
-  color: #fff;
-}
-
-/* ========================================================================== */
+/* ================================================================================= */
 
 /* Team section */
 
