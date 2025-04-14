@@ -101,7 +101,7 @@
   }
 
   .hero-image img {
-    height: 65%;
+    height: 75%;
   }
 
   .landing-btn {
@@ -239,13 +239,143 @@
 
 .text p {
   /* margin-top: 2rem; */
-  width: 80%;
+  width: 100%;
   font-family: 'Karla Tamil Upright';
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 140%;
   color: #fff;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .history {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--clr-grey-3);
+  }
+
+  .container {
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .title {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .container h1 {
+    font-family: 'Tiro Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #fff;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+
+    height: 50%;
+    align-items: flex-start;
+  }
+
+  .founder img {
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .text p {
+    width: 100%;
+    font-family: 'Karla Tamil Upright';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #fff;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+  .history {
+    width: 100vw;
+    height: 75vh;
+    background-color: var(--clr-grey-3);
+  }
+
+  .container {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .title {
+    width: 80%;
+    margin: 3rem 5rem;
+  }
+
+  .container h1 {
+    font-family: 'Tiro Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #fff;
+  }
+
+  .content {
+    display: flex;
+    width: 95%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .founder img {
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin: auto 1rem;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: first baseline;
+  }
+
+  .text p {
+    width: 100%;
+    font-family: 'Karla Tamil Upright';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 145%;
+    color: #fff;
+  }
 }
 
 /* ================================================================================= */
