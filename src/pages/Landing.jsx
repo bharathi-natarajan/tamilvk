@@ -21,6 +21,7 @@ const Landing = () => {
           <img src={Valluvar} alt="Valluvar Image" />
         </div>
       </section>
+
       {/* History section */}
       <section className="history">
         <div className="container">
@@ -53,7 +54,11 @@ const Landing = () => {
         <div className="menu-bar">
           <ul>
             {teamMenuItems.map(({ id, item }) => {
-              return <li key={id}>{item}</li>
+              return (
+                <li key={id} onClick={() => console.log(item)}>
+                  {item}
+                </li>
+              )
             })}
           </ul>
         </div>
