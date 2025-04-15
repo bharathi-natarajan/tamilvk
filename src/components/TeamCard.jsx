@@ -16,24 +16,6 @@ const TeamCard = ({ card }) => {
             </article>
           )
         })}
-
-        {/* {teamMenuItems.map((team) => {
-          return (
-            team.members &&
-            team.members.map((member, index) => (
-              <article className="card" key={`${team.id}-${index}`}>
-                <div className="img-container">
-                  <img src={member.img} alt={member.name} />
-                </div>
-                <div className="card-title">
-                  <h4>{member.name}</h4>
-                  <p>{member.title1}</p>
-                  <p>{member.title2}</p>
-                </div>
-              </article>
-            ))
-          )
-        })} */}
       </div>
     </section>
   )

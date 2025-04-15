@@ -5,7 +5,7 @@ import TeamCard from './TeamCard'
 import { teamText } from '../data'
 
 const Team = () => {
-  const [card, setCard] = useState([])
+  const [card, setCard] = useState(teamMenuItems[0].members)
 
   const handleClick = (id) => {
     const newItem = teamMenuItems.find((item) => item.id === id)
