@@ -2,8 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--clr-grey-5);
-
-  border: 2px solid red;
+  border: 1px solid var(--clr-grey-5);
 }
 
 .team-title {

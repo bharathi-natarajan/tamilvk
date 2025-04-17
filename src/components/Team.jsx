@@ -4,6 +4,9 @@ import { teamMenuItems } from '../data'
 import TeamCard from './TeamCard'
 import { teamText } from '../data'
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+
 const Team = () => {
   const [card, setCard] = useState(teamMenuItems[0].members)
 

@@ -1,57 +1,106 @@
-.card-container {
-  width: 80%;
-  height: 55%;
-  margin: auto;
-  padding: 0 1rem;
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--grey-100);
-  overflow: hidden;
-  border: 2px solid green;
+.team-card-scroll {
+  width: 100vw;
+  height: 80vh;
+  padding: 4rem 1rem;
+  background-color: var(--clr-grey-7);
 }
 
-.card {
-  margin-left: 2rem;
-  width: 14rem;
-  max-width: 14rem;
-  min-height: 80%;
+.scroll-wrapper {
+  max-width: 100%;
+  margin: auto;
+  padding: 2rem;
   display: flex;
-  flex-direction: column;
-  flex-basis: 30rem;
-  flex-grow: 0;
-  flex-shrink: 0;
-  justify-content: space-around;
   align-items: center;
-  background-color: var(--white);
+  /* position: relative; */
+  gap: 0.5rem;
+}
+
+/* Cards */
+.card {
+  margin: 1rem auto;
+  background: #fff;
+  /* width: 80%; */
+  max-width: 100%;
+  /* height: 20%; */
   border-radius: 1rem;
-  border: 2px solid blue;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .img-container {
-  width: 60%;
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid #650c99;
+  overflow: hidden;
 }
 
 .img-container img {
   width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 0.75rem;
 }
 
 .card-title h4 {
-  padding: 1rem;
-  font-family: 'Tiro Tamil';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
+  font-family: 'Tiro Tamil', serif;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
 .card-title p {
-  font-family: 'Karla Tamil Upright';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.05rem;
-  text-align: center;
+  font-family: 'Karla Tamil Upright', sans-serif;
+  font-size: 1rem;
+  color: #666;
+  margin: 0.2rem 0;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+  flex: 0 0 auto;
+  width: 3rem;
+  height: 3rem;
+  /* background-color: #fff; */
+  border-radius: 50%;
+  color: #650c99;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-arrow:hover {
+  background-color: #650c99;
+  color: #fff;
+}
+
+/* Swiper overrides */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.8rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  transform: none !important;
+  margin: 0 !important;
+}
+
+/* Mobile: hide arrows for simplicity */
+@media (max-width: 640px) {
+  .nav-arrow {
+    display: none;
+  }
 }
