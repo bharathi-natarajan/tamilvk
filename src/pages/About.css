@@ -1,0 +1,108 @@
+.about-section {
+  background-color: #a56abd;
+  padding: 2rem 0;
+}
+
+.img-txt {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.abt-img {
+  flex: 1 1 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .abt-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+} */
+
+.abt-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+  animation: pulseBorder 6s infinite ease-in-out;
+  border: 2px solid transparent;
+  background: linear-gradient(#a56abd, #a56abd) padding-box,
+    linear-gradient(135deg, #ff99cc, #cc99ff, #66ccff) border-box;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulseBorder {
+  0% {
+    background: linear-gradient(#a56abd, #a56abd) padding-box,
+      linear-gradient(135deg, #ff99cc, #cc99ff, #66ccff) border-box;
+  }
+  50% {
+    background: linear-gradient(#a56abd, #a56abd) padding-box,
+      linear-gradient(135deg, #cc99ff, #66ccff, #ff99cc) border-box;
+  }
+  100% {
+    background: linear-gradient(#a56abd, #a56abd) padding-box,
+      linear-gradient(135deg, #ff99cc, #cc99ff, #66ccff) border-box;
+  }
+}
+
+.abt-img img:hover {
+  box-shadow: 0 0 25px #ffffff66;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.abt-txt {
+  flex: 1 1 65%;
+  color: #fff;
+}
+
+.abt-txt h3 {
+  font-family: 'Tiro Tamil', serif;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.abt-txt h4 {
+  font-size: 1.2rem;
+  color: #eed5ff;
+  margin-bottom: 1rem;
+}
+
+.abt-txt p {
+  font-family: 'Karla Tamil Upright';
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f2e8fa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .img-txt {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .abt-img,
+  .abt-txt {
+    width: 90%;
+  }
+
+  .abt-img img {
+    max-width: 80%;
+  }
+}

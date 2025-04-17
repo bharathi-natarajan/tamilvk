@@ -1,4 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import {
   Landing,
   About,
@@ -48,6 +51,9 @@ const router = createBrowserRouter([
 ])
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 })
+  }, [])
   return <RouterProvider router={router} />
 }
 export default App
