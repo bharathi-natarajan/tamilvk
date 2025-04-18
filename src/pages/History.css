@@ -1,0 +1,167 @@
+/* Article Containers with Individual Styles */
+.article-1 {
+  background-color: #f9f4ff;
+}
+
+.article-2 {
+  background-color: #fefaf5;
+}
+
+.article-3 {
+  background-color: #f5f9fc;
+}
+
+.article-4 {
+  background-color: #fff9f5;
+}
+
+.encyclopedia {
+  background-color: #f5f5f5;
+}
+
+/* Section Title */
+.section-title {
+  margin: 2rem auto;
+  font-family: 'Coiny';
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 152%;
+  letter-spacing: 0.01em;
+  color: #650c99;
+  text-align: center;
+}
+
+/* General Layout */
+.history-container,
+.encyclopedia {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-left: 4px solid #d0a4f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  background-color: #fefaf5;
+}
+
+/* Alternating Backgrounds */
+.history-container:nth-of-type(odd) {
+  background-color: #f9f4ff;
+}
+
+/* Image Styles */
+.history-img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.history-img img {
+  max-width: 100%;
+  border: 3px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.img-caption {
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+/* Headings */
+.history-txt h4,
+.encyclopedia h4 {
+  font-family: 'Tiro Tamil', serif;
+  font-size: 2rem;
+  color: #5e3370;
+  margin: 2rem 1rem 1rem;
+}
+
+.encyclopedia h5 {
+  font-family: 'Tiro Tamil', serif;
+  font-size: 1.2rem;
+  color: #7a7a7a;
+  margin: 1rem;
+}
+
+/* Paragraphs */
+.history-txt p,
+.encyclopedia p {
+  font-family: 'Karla Tamil Upright';
+  font-size: 20px;
+  line-height: 1.7;
+  color: #333;
+  margin: 1rem 1.5rem;
+}
+
+/* Drop Cap Styling for First Paragraph */
+.history-txt p:first-of-type::first-letter {
+  float: left;
+  font-size: 3rem;
+  line-height: 1;
+  padding-right: 0.5rem;
+  color: #9c27b0;
+  font-family: 'Tiro Tamil', serif;
+}
+
+/* Quotes */
+.quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 2rem;
+  padding-left: 1.5rem;
+  border-left: 4px solid #9c27b0;
+  color: #5e3370;
+}
+
+/* Lists */
+.encyclopedia ul,
+.history-txt ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.5rem 2rem;
+}
+
+.encyclopedia ul li,
+.history-txt ul li {
+  font-family: 'Tiro Tamil', serif;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+/* Icon for list items */
+.encyclopedia ul li::before,
+.history-txt ul li::before {
+  content: '🔹';
+  position: absolute;
+  left: 0;
+  color: #650c99;
+  font-size: 1rem;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .history-txt h4 {
+    font-size: 1.5rem;
+  }
+
+  .history-txt p,
+  .encyclopedia p {
+    font-size: 18px;
+  }
+
+  .encyclopedia ul li,
+  .history-txt ul li {
+    font-size: 1rem;
+  }
+}

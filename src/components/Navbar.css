@@ -34,6 +34,10 @@
   line-height: 1.2;
 }
 
+.logo-link {
+  text-decoration: none;
+}
+
 .nav-links ul {
   display: flex;
   align-items: center;
