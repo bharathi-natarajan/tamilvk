@@ -1,17 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { navLinks } from '../data'
 import logo from '../images/Logo only.png'
-import './Navbar.css'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const toggleMenu = () => setMenuOpen(!menuOpen)
-
-  useEffect(() => {
-    document.body.classList.toggle('menu-open', menuOpen)
-  }, [menuOpen])
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
 
   return (
     <nav className="navbar">
@@ -23,30 +20,23 @@ const Navbar = () => {
           </div>
         </NavLink>
 
-        <button
-          className={`hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
+        <div
+          className={`nav-links ${menuOpen ? 'show-menu' : ''}`}
+          onClick={() => setMenuOpen(false)}
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
           <ul>
             {navLinks.map(({ id, href, text }) => (
               <li key={id}>
-                <NavLink
-                  to={href}
-                  className={({ isActive }) => (isActive ? 'active' : '')}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {text}
-                </NavLink>
+                <NavLink to={href}>{text}</NavLink>
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="hamburger" onClick={toggleMenu}>
+          <span className={menuOpen ? 'bar open' : 'bar'}></span>
+          <span className={menuOpen ? 'bar open' : 'bar'}></span>
+          <span className={menuOpen ? 'bar open' : 'bar'}></span>
         </div>
       </div>
     </nav>
