@@ -1,0 +1,63 @@
+.team-container h3 {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #ece9e2;
+  color: #5a0080;
+}
+
+.full-team {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: linear-gradient(#eceffe, #ced6fb);
+}
+
+.card-list .card-item {
+  margin: 2rem;
+  list-style: none;
+  width: 400px;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0 10p 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.card-list .card-item:hover {
+  border-color: #5372f0;
+}
+
+.card-list .card-image {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .badge {
+  color: #5372f0;
+  margin: 16px 0 18px;
+  padding: 8px 16px;
+  font-family: 'Karla Tamil Upright';
+  font-size: 1rem;
+  background: #dde4ff;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-title {
+  margin: 1.5rem 0;
+  font-family: 'Tiro Tamil', serif;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+/* font-family: 'Tiro Tamil', serif;
+  font-size: 2rem;
+
+   font-family: 'Karla Tamil Upright';
+  font-size: 1.1rem; */

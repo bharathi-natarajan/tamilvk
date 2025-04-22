@@ -194,6 +194,7 @@ export const teamMenuItems = [
         title2: '',
       },
       {
+        img: '/images/img-placeholder.jpg',
         name: 'முனைவர் ஒப்பிலா மதிவாணன்',
         title1: '',
         title2: '',

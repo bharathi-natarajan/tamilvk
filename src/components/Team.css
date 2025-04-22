@@ -1,22 +1,126 @@
-.team {
+.team-section-comp {
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: #f8f4fa;
+  color: #2e2e2e;
+}
+
+.team-content-comp {
+  max-width: 100vw;
+  margin: auto;
+  text-align: center;
+}
+
+.team-section-title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-section-title h2 {
+  padding: 1rem;
+  font-family: 'Tiro Tamil', serif;
+  font-size: 3rem;
+  color: #5a0080;
+  margin-bottom: 1rem;
+}
+
+.team-section-title p {
+  font-family: 'Karla Tamil Upright';
+  font-size: 1.4rem;
+  color: #555;
+  max-width: 80%;
+  margin: auto;
+}
+
+.team-menu {
+  margin: 3rem 0 2rem;
+}
+
+.team-menu ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.team-menu li {
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  background: #ece6f2;
+  font-family: 'Pavanam', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.team-menu li:hover {
+  background-color: #d7c2e8;
+  transform: scale(1.03);
+}
+
+.team-menu li.active {
+  background-color: #650c99;
+  color: white;
+  font-weight: bold;
+}
+
+.team-cards {
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-title h2 {
+    font-size: 2.2rem;
+  }
+
+  .team-title p {
+    font-size: 1rem;
+  }
+
+  .team-menu li {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .team-section {
   width: 100vw;
   height: 100vh;
   background-color: var(--clr-grey-5);
   border: 1px solid var(--clr-grey-5);
 }
 
-.team-title {
+.team-section-title {
   margin: 3rem;
   text-align: center;
 }
 
-.team-title h1 {
+.team-section-title h1 {
   font-family: 'Tiro Tamil';
   font-size: 3rem;
   color: #fff;
 }
 
-.team-title p {
+.team-section-title p {
   margin: 2rem auto;
   color: #fff;
   font-size: 1.25rem;
@@ -42,4 +146,4 @@
   font-family: 'Pavanam', sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
-}
+} */
