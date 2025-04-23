@@ -1,8 +1,6 @@
 import './TeamCard.css'
 
 const TeamCard = ({ team, teamTitle }) => {
-  console.log(teamTitle)
-
   return (
     <section className="team-container">
       <h3>{teamTitle}</h3>

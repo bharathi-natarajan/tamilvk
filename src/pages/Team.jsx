@@ -18,7 +18,7 @@ const Team = () => {
   return (
     <section className="team-section">
       <div className="team-title">
-        <h3>நிர்வாகக் குழு</h3>
+        <h3>நிருவாகக் குழு</h3>
       </div>
       <div className="team-menu">
         {teamMenuItems.map(({ id, item }) => (

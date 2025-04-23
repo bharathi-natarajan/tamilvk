@@ -1,8 +1,9 @@
 export const navLinks = [
+  { id: 1, href: '/about', text: 'முகப்பு' },
   { id: 2, href: '/அமைப்பு', text: 'அமைப்பு' },
-  { id: 1, href: '/நிருவாகம்', text: 'நிருவாகம்' },
-  { id: 3, href: '/நிகழ்வுகள்', text: 'நிகழ்வுகள்' },
-  { id: 4, href: '/வெளியீடுகள்', text: 'வெளியீடுகள்' },
+  { id: 3, href: '/நிருவாகம்', text: 'நிருவாகம்' },
+  // { id: 4, href: '/நிகழ்வுகள்', text: 'நிகழ்வுகள்' },
+  { id: 5, href: '/வெளியீடுகள்', text: 'வெளியீடுகள்' },
 ]
 
 export const heroText = {
@@ -38,7 +39,7 @@ export const teamMenuItems = [
         title2: '',
       },
       {
-        img: '/images/img-placeholder.jpg',
+        img: '/images/rajendran.png',
         name: 'முனைவர் ம. இராசேந்திரன்',
         title1: '',
         title2: '',
@@ -74,7 +75,7 @@ export const teamMenuItems = [
     item: 'ஆட்சிக்குழு',
     members: [
       {
-        img: '/images/img-placeholder.jpg',
+        img: '/images/rajendran.png',
         name: 'முனைவர் ம. இராசேந்திரன்',
         title1: 'தலைவர்',
         title2: '',

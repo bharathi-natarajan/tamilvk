@@ -1,0 +1,45 @@
+/* Global font setup */
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil&family=Karla&display=swap');
+
+.books-section {
+  background: #f9f6f1;
+  padding: 4rem 2rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.books-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.books-menu {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.books-menu h3 {
+  font-family: 'Tiro Tamil', serif;
+  font-size: 2.8rem;
+  color: #511a75;
+  margin-bottom: 1.5rem;
+}
+
+.books-menu button {
+  background: #fff;
+  border: 2px solid #ccc;
+  color: #511a75;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.books-menu button:hover,
+.books-menu button:focus {
+  background: #511a75;
+  color: #fff;
+  border-color: #511a75;
+}

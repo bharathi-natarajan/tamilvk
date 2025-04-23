@@ -1,3 +1,4 @@
+import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import History from '../components/History'
 import Team from '../components/Team'
@@ -8,6 +9,7 @@ const Landing = () => {
       <Hero />
       <History />
       <Team />
+      <Contact />
     </>
   )
 }
