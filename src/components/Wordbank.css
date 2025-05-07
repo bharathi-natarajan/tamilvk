@@ -1,0 +1,14 @@
+.news,
+.epedia,
+.word-bank {
+  height: 100%;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  margin: 1rem 0;
+  height: 40vh;
+  background-color: #fafafa;
+}

@@ -1,0 +1,133 @@
+.title-text {
+  font-family: 'Tiro Tamil', serif;
+  font-size: 1.5rem;
+  color: #940212;
+  white-space: nowrap;
+}
+
+.logo-title-col {
+  gap: 1rem;
+}
+
+.logo-img {
+  height: 75px;
+}
+
+.nav-item,
+.nav-txt {
+  text-decoration: none;
+  /* padding-bottom: 1.75rem; */
+  color: #4c4d41;
+  font-family: 'Pavanam', sans-serif;
+  font-size: 22px;
+}
+
+.social-icon {
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.social-icon.facebook:hover {
+  color: #1877f2; /* Facebook blue */
+}
+
+.social-icon.instagram:hover {
+  color: #e1306c; /* Instagram pink */
+}
+
+.social-icon.youtube:hover {
+  color: #ff0000; /* YouTube red */
+}
+
+/* Style for the nav items */
+
+.nav-link-custom {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #4c4d41;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background-color: #940212;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+
+.nav-txt:hover {
+  color: #940212;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+/* Active state */
+.nav-link-custom.active {
+  color: #940212;
+}
+
+.nav-link-custom.active::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border-color: #940212;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23940212' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 768px) {
+  .logo-img {
+    height: 60px;
+  }
+  .title-text {
+    font-size: 1.3rem;
+  }
+
+  .logo-title-col {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 50px;
+  }
+
+  .title-text h4 {
+    font-size: 1.2 rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .logo-title-col {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    height: 40px;
+  }
+  .title-text h4 {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .logo-title-col {
+    gap: 0.5rem;
+  }
+}

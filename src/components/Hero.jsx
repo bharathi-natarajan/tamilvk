@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="hero-container">
       <div className="hero-text">
         <h1>{heroText.title}</h1>
-        <p>{heroText.content}</p>
+        {/* <p>{heroText.content}</p> */}
         <NavLink to="/about">
           <button className="landing-btn">மேலும் அறிய...</button>
         </NavLink>
